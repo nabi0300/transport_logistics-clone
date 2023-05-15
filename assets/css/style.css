@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krub', sans-serif;
+}
+
+:root {
+    --primary1:#ffbe34;
+    --primary2:#091242;
+    --secondary1:#f4f4f4;
+    --headingFont:#1c1f35;
+    --pgFont:#666c89;
+    
+}
+
+.sec_space {
+    padding: 6rem 0;
+}
+
+
+
+
+
+/* --------------------Secondary_navbar-------------------- */
+
+
+
+
+
+.secondary_nav {
+    background-color: var(--primary2);
+    padding: 30px 0;
+}
+
+.secondary_nav-items{
+    list-style-type: none;
+}
+
+.secondary_nav-items li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-left: 40px;
+}
+.secondary_nav-items li a > span{
+    display: inline-block;
+    color: #f6b426;
+    background-color: #111c55;
+    border: #273270 1px solid;
+    padding: 18.612px;
+    border-radius: 50%;
+}
+
+.address_bar-items {
+    margin-left: 14px;
+}
+
+
+
+
+
+
+/* --------------------Primary_navbar-------------------- */
+
+
+
+
+.navbar {
+    background-color: rgba(9, 18, 66, 0.25);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    padding: 0;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 16px;
+    padding: 0 2rem;
+    border-right: 1px solid #f4f4f456;
+}
+
+.navbar .request_btn {
+    color: black;
+    background-color: #fff;
+    padding: 27px 47px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.social_lnks {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-right: 1rem;
+}
+
+.social_lnks li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 .7rem;
+    font-size: 18px;
+}
+
+
+
+
+
+/* --------------------Hero_section-------------------- */
+
+
+
+
+
+.hero_bnr-wrap {
+    position: relative;
+}
+
+.hero_bnr {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+
+.hero_content-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+
+.hero_content span{
+    color: white;
+    border-left: var(--primary1) 5px solid;
+    background-color: rgba(4, 28, 55, .5);
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.hero_content h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero_content p{
+    color: white;
+    margin-bottom: 24px;
+}
+
+.hero_content .hero_btn{
+    color: #23212a;
+    background-color: var(--primary1);
+    display: inline-block;
+    padding: 18px 47px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_btn::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    transform: translate(15%, 15%);
+    background-color: white;
+    border-radius: 100% 0 0 0;
+    box-shadow: 50px 50px 50px 50px white;
+}
+
+.hero_btn::before:hover{
+    width: 60px;
+    height: 70px;
+}
+
+
+
+
+
+/* --------------------Services_section-------------------- */
+
+
+
+
+.services_content span{
+    color: var(--headingFont);
+    background-color: rgba(4, 28, 55, .1);
+    font-size: 14px;
+    padding: 2px 8px;
+    border-left: var(--primary1)  5px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+       
+.hero_content .hero_heading{
+    font-size: 20px;
+}
+    
+ }
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+       
+.hero_content .hero_heading{
+    font-size: 25px;
+}
+
+
+    
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+       
+.hero_content .hero_heading{
+    font-size: 30px;
+}
+    
+.hero_content p{
+    display: none;
+}
+
+
+.hero_content span{
+    color: white;
+    border-left: var(--primary1) 5px solid;
+    background-color: rgba(4, 28, 55, .5);
+    padding: 2px 4px;
+    font-size: 10px;
+}
+
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+       
+.hero_content .hero_heading{
+    font-size: 40px;
+}
+    
+ }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+
+    
+.hero_content h.hero_heading1{
+    font-size: 50px;
+}
+
+    
+ }
